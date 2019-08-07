@@ -6,7 +6,8 @@ function mostrar() {
     var perimetro;
     do {
         lado = parseInt(prompt("ingrese el uno de los lados a calcular: "));
-    } while (isNaN(lado));
+    } while (isNaN(lado)|| lado<1);
+
     perimetro = 3*lado;
 
     alert('El perimetro es: '+perimetro);
